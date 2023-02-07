@@ -1,0 +1,28 @@
+
+/*this is external file*/
+body{
+    border:gray;
+    margin:200px;
+    
+}
+h1{
+    text-align:center;
+    background-color:gray
+}
+/*fieldset,legend                   //combined selectors
+{
+    background-color: bisque;
+}*/
+fieldset
+{
+    background-color:bisque;
+}
+legend
+{
+    background-color:aliceblue;
+    cursor: pointer;
+}
+input[type=submit]
+{
+    cursor: pointer;
+}

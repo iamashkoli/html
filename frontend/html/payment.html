@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">	<!--use external stylesheet-->
+</head>
+<fieldset>
+<body>
+	<form action="" method="post">
+
+	
+				<!--person information-->
+	<h1>Payment Form</h1>
+		<fieldset>
+		<legend>User Information</legend>
+		<p>
+			Name:*
+				<input type="text" name="name" placeholder="Enter your full name" required>
+		</p>
+		<p>
+			Date of Birth:
+				<input type="text" name="dob" placeholder="Enter your DOB">
+		</p>
+		<p>
+			Age:
+				<input type="text" name="age" placeholder="Enter your age">
+		</p>
+		</fieldset>
+		<fieldset>
+			<legend>Gender</legend>
+			<!--use inline stylesheet-->
+		<p>
+				<input type="radio" style="cursor: pointer;" name="gender" required>Male
+				<input type="radio" style="cursor: pointer;" name="gender" required>Female
+		</p>
+		</fieldset>
+		<fieldset>
+		<legend>Contact Details</legend>
+			<p>
+				Contact Me:
+				<input type="contact no" name="contact no">
+					
+			</p>
+			<p>
+				Address:
+					<textarea name="address" name="address" rows="5" column="6"></textarea>
+			</p>
+			<p>
+				Email:*
+					<input type="email" name="email" required>
+			</p>
+			<p>
+				Password:*
+					<input type="password" name="password" required>
+			</p>
+			</fieldset>
+		<fieldset>
+	<legend>Bank Information</legend>
+		<p>
+			Bank Name:
+				<input type="text" name="bank name" placeholder="Enter your bank name">
+		</p>
+		<p>
+			Account No:*
+				<input type="text" name="account no" placeholder="1111-2222-3333-4444"required>
+		</p>
+		<p>
+			IFSC Code:*
+				<input type="text" name="ifsc code" placeholder="DFSC23748"required>
+		</p>
+		<p>
+			Enter your amount:
+				<input type="amount" name="amount">
+		</p>
+		</fieldset>
+		<fieldset>
+	<legend>Payment Details</legend>
+		<p>
+			Card CVV:
+				<input type="password" name="cvv">
+		</p>
+		<p>
+			Expiration Date:
+				<input type="date" name="exp_date">
+		</p>
+		</fieldset>
+		<fieldset>
+		<legend>Card Type:-</legend>
+			<select name="dropdown">
+				<option value="" style="background-color:gray">--Select a card type--</option>
+				<option value="PhonePay" style="background-color:gray">PhonePay</option>
+				<option value="GooglePay" style="background-color:gray">GooglePay</option>
+				<option value="visacard" style="background-color:gray">VisaCard</option>
+				<option value="debitcard" style="background-color:gray">DebitCard</option>
+			</select>
+		</fieldset>
+		<p>
+				<input type ="submit" value="submit" style="background-color:aqua">
+		</p>
+
+		<p>
+			<input type ="reset" value="reset" style="background-color:teal">
+	</p>
+	</form>	
+</body>
+</fieldset>
+</html>	

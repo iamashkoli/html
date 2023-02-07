@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp Boxes of JavaScript</title>
+    <script type="text/javascript">
+
+        // ALERT BOX
+        function show_alert()
+        {
+            alert("Hey...I am an alert box..");
+        }
+
+        //CONFIRM BOX
+        function show_confirm()
+        {
+            let a=confirm("Press a button");
+            if (a == true)
+            {
+                alert("You pressed OK..");
+            }
+            else
+            {
+                alert("You pressed CANCLE...");
+            }
+
+        }
+        
+</Script>    
+</head>
+<body>
+    <br><input type="button" onclick="show_alert()" value="show alert box"/></br>
+
+    <br><input type="button" onclick="show_confirm()" value="show confirm box"/></br>
+
+</body>
+</html>

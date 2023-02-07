@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title>JavaScript Repeat Day Function</title> 
+    </head>
+        <body> 
+            <style>
+                button
+                {
+                    background-color:yellowgreen;
+                }
+                h2
+                {
+                    color: teal;
+                }
+                </style>
+                    <h2>
+                        Reapet The String
+                    </h2> 
+                            <button onclick="repeatdlyDay()" id="btnClick">Click me</button> 
+                            <p id="pId"></p> 
+                            <script> 
+                            
+                                function repeatdlyDay()
+                                { 
+                                    let text="hello ashwini <br>"; 
+                                    let result= text.repeat(10); 
+                                    document.getElementById("pId").innerHTML =result;
+                                }
+                            </script> 
+</body> 
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start And Stop Video In JavaScript</title>
+    <style>
+        button
+        {
+            background-color: cadetblue;
+        }
+        body
+        {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Start And Stop Video</h1>
+        <button onclick="playVideo()" id="btnPlay()" type="button">Play Video </button>
+        <button onclick="stopVideo()" id="btnStop()" type="button">Stop Video </button>
+
+        <video id="BirthdayGirl" width="250" height="450">
+                 <source src="C:\Users\Ashwini Koli\Pictures\VID_20210718_193104.mp4" type="video/mp4">
+        </video>
+
+        <script>
+            let video=document.getElementById("BirthdayGirl");
+            function playVideo()
+            {
+                video.play();
+            }
+            function stopVideo()
+            {
+                video.pause();
+            }
+        </script> 
+</body>
+</html>

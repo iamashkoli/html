@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title>bank details</title>
+    </head>
+    <style>
+        body
+        {
+            background-color:blanchedalmond;
+        }
+        button
+        {
+            background-color:aquamarine;
+        }
+    </style>
+<body> 
+    <form action="" method="post">
+    <h1> State Bank Of India</h1> 
+        <h2> Create Account</h2>
+            <h2>Give Your Details</h2> 
+                First name:
+                    <input type="text" id="txtFirstName" name="firstname"> 
+                    <br> 
+                    <br>
+                Last name: 
+                    <input type="text" name="lastname" id="txtLastName"> 
+                    <br> 
+                    <br>
+                    <button onclick="showAlert()" id=btnSubmit>Submit</button> 
+                    <br>
+
+                    <br>
+                    <button onclick="showConformationMessage()" id="btnClick">Yes or Not</button> 
+            <script> 
+                function showAlert()
+                    { 
+                        alert("Created Account"); 
+                    } 
+                    function showConformationMessage()
+                            { 
+                            let name = confirm("Are you want to use the account"); 
+                                    if (name == true)
+                                        { 
+                                            alert(" Account created sucessfully"); 
+                                        } 
+                                        else
+                                        { 
+                                            alert("sorry,try again Your account is not created"); 
+                                        } 
+                            }
+            </script> 
+        </form>
+</body> 
+</html>

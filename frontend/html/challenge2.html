@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String in JavaScript</title>
+</head>
+<body>
+    <h2>Reverse String in JavaScript</h2>
+    Main String:"Ashwini Koli";
+    <p id="reverseText"></p>
+    <script>
+        let reverseString = reverseStringMothod("Ashwini Koli");
+        document.getElementById("reverseText").innerHTML= "Reverse String:"+reverseString;
+
+        function reverseStringMothod(str)
+        {
+            let result="";
+            for(let i=str.length-1; i>=0; i--)
+            {
+                result+=str.charAt(i);
+            }
+            return result;
+        }
+    </script>
+</body>
+</html>

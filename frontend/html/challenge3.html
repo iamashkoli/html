@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title> JavaScript Animation</title>
+    </head>
+        <style> 
+            #myBigContainer 
+            {   
+                width: 600px; 
+                height: 500px; 
+                position: relative; 
+                background-color:yellowgreen; 
+            } 
+            #mySmallContainer
+            { 
+                width: 100px; 
+                height: 50px; 
+                position: absolute; 
+                background-color:teal; 
+            } 
+            button
+            {
+                background-color: mediumvioletred;
+            }
+        </style> 
+<body> 
+    <h1>Animation For Move</h1>
+    <p>
+       <button onclick=" jsAniminationForMove()">Click Me</button> 
+    </p>   
+        <div id ="myBigContainer"> 
+        <div id ="mySmallContainer"></div> 
+        </div>
+        
+        <script> 
+                function jsAniminationForMove() 
+                { 
+                     let element = document.getElementById("mySmallContainer"); 
+                     let p = 0;         //pixel=0;
+                     let idValue = setInterval(frame, 1); 
+                    function frame() 
+                    { 
+                        if (p == 500)                   //0==500=false;
+                        { 
+                            clearInterval(idValue); 
+                        } 
+                        else 
+                        { 
+                            p++; 
+                            element.style.top =p+ 'px'; 
+                            element.style.top = p+ 'px'; 
+                        } 
+                    } 
+                } 
+</script> 
+</body> 
+</html> 
